@@ -22,7 +22,7 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "services-component"}
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "markdown" }
-          - { label: "Services", name: "services", widget: "list", min: "1", max: "8" }
+          - { label: "Services", name: "services", widget: "list", min: 1, max: 8 }
       - file: "src/components/hours/index.md"
         label: "Hours"
         name: "services"

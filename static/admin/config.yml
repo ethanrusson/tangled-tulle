@@ -44,8 +44,7 @@ collections:
         name: "index"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - { label: "Services", name: "services", widget: "list", min: "1", max: "8" }
-          - {  }
+          - { label: "Services", name: "services", widget: "list", min: 1, max: 8 }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"

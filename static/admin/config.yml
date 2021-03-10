@@ -25,7 +25,7 @@ collections:
           - { label: "Services", name: "services", widget: "list", min: 1, max: 8 }
       - file: "src/components/hours/index.md"
         label: "Hours"
-        name: "services"
+        name: "hours"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "services-component"}
           - { label: "Title", name: "title", widget: "string" }

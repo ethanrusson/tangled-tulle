@@ -22,7 +22,7 @@ collections:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "services-component"}
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "markdown" }
-          - { label: "Services", name: "services", widget: "list", min: 1, max: 8 }
+          - { label: "Services", name: "services", widget: "list", min: 1, max: 8, field: {label: "Text", name: "service-text", widget: "string"} }
       - file: "src/components/hours/index.md"
         label: "Hours"
         name: "hours"
@@ -44,7 +44,14 @@ collections:
         name: "index"
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
-          - { label: "Services", name: "services", widget: "list", min: 1, max: 8 }
+          - { label: "Row", name: "rows", widget: "list", fields: 
+              - {label: Title, name: title, widget: string}
+              - {label: Image, name: image, widget: image}
+              - { label: "Buttons", name: "buttons", widget: "list", max: 2, fields: 
+                  - {label: "Text", name: "button-text", widget: "string"}
+                  - {label: "URL", name: "button-url", widget: "string"} 
+                }
+          }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"

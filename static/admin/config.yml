@@ -45,8 +45,8 @@ collections:
         fields:
           - { label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - { label: "Row", name: "rows", widget: "list", fields: 
-              - {label: Title, name: title, widget: string}
-              - {label: Image, name: image, widget: image}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
               - { label: "Buttons", name: "buttons", widget: "list", max: 2, fields: 
                   - {label: "Text", name: "button-text", widget: "string"}
                   - {label: "URL", name: "button-url", widget: "string"} 
